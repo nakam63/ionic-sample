@@ -26,3 +26,24 @@
 -> Y
 
 ※　brew, nodebrew, ionicなどのインストールが必要。
+
+## iOSシミュレータで動かす
+
+Xcodeのインストール(https://apps.apple.com/jp/app/xcode/id497799835?mt=12)
+
+下記のコマンドを実行すると、エミュレーターが開く。
+（ソースコードをiOS用にBuildするため時間がかかる。）
+
+```ionic cordova emulate ios```
+
+## 本番環境（Firebase）にデプロイする
+
+下記のコマンドを実行し、ソースコードを本番環境用にBuildする。
+
+```ionic build --prod```
+
+Build完了後、下記のコマンドを実行してアプリケーションをDeployする。
+
+```firebase deploy```
+
+Deployが完了するとHostのURLが表示される。
