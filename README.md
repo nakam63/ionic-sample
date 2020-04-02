@@ -24,3 +24,5 @@
 > ? Install @angular/cli? (Y/n)
 
 -> Y
+
+※　brew, nodebrew, ionicなどのインストールが必要。
